@@ -1,4 +1,9 @@
 module.exports = {
-  content: ["./*.html", "./src/**/*.css"],
-  plugins: [require("@tailwindcss/forms")],
-};
+  content: ['./dist/**/*.html', './src/**/*.{js,jsx,ts,tsx}', './*.html'],
+  plugins: [require('@tailwindcss/forms')],
+  variants: {
+    extend: {
+      opacity: ['disabled']
+    }
+  }
+}
